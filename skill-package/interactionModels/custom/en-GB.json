@@ -1,190 +1,227 @@
 {
-  "interactionModel": {
-    "languageModel": {
-      "invocationName": "tom jam",
-      "intents": [
-        {
-          "name": "AMAZON.CancelIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.HelpIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.StopIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.YesIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.NoIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.FallbackIntent",
-          "samples": []
-        },
-        {
-          "name": "NumberGuessIntent",
-          "slots": [
-            {
-              "name": "number",
-              "type": "AMAZON.NUMBER"
-            }
-          ],
-          "samples": [
-            "{number}",
-            "is it {number}",
-            "how about {number}",
-            "could be {number}"
-          ]
-        },
-        {
-          "name": "AMAZON.NavigateHomeIntent",
-          "samples": []
-        },
-        {
-          "name": "PlayerMoveIntent",
-          "slots": [
-            {
-              "name": "direction",
-              "type": "Direction"
-            }
-          ],
-          "samples": [
-            "walk {direction}",
-            "go to the {direction}",
-            "go {direction}"
-          ]
-        },
-        {
-          "name": "PlayerDropIntent",
-          "slots": [
-            {
-              "name": "item",
-              "type": "GameNoun"
-            }
-          ],
-          "samples": [
-            "put down the {item}",
-            "put down {item}",
-            "drop the {item}",
-            "drop {item}"
-          ]
-        },
-        {
-          "name": "PlayerTakeIntent",
-          "slots": [
-            {
-              "name": "item",
-              "type": "GameNoun"
-            }
-          ],
-          "samples": [
-            "pick up {item}",
-            "get {item}",
-            "get the {item}",
-            "take the {item}",
-            "take {item}"
-          ]
-        },
-        {
-          "name": "PlayerExamineIntent",
-          "slots": [
-            {
-              "name": "item",
-              "type": "GameNoun"
-            }
-          ],
-          "samples": [
-            "look at {item}",
-            "look at the {item}",
-            "inspect {item}",
-            "examine the {item}",
-            "examine {item}"
-          ]
-        },
-        {
-          "name": "PlayerReadIntent",
-          "slots": [
-            {
-              "name": "item",
-              "type": "GameNoun"
-            }
-          ],
-          "samples": [
-            "read {item}"
-          ]
-        },
-        {
-          "name": "PlayerInventoryIntent",
-          "slots": [],
-          "samples": [
-            "what do I have",
-            "what am I holding",
-            "what am I carrying"
-          ]
-        },
-        {
-          "name": "PlayerLookIntent",
-          "slots": [],
-          "samples": [
-            "redescribe",
-            "look around"
-          ]
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "tom jam",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "PlayerMoveIntent",
+                    "slots": [
+                        {
+                            "name": "direction",
+                            "type": "Direction"
+                        }
+                    ],
+                    "samples": [
+                        "walk {direction}",
+                        "go to the {direction}",
+                        "go {direction}"
+                    ]
+                },
+                {
+                    "name": "PlayerDropIntent",
+                    "slots": [
+                        {
+                            "name": "item",
+                            "type": "GameNoun"
+                        }
+                    ],
+                    "samples": [
+                        "take off {item}",
+                        "remove {item}",
+                        "put down the {item}",
+                        "put down {item}",
+                        "drop the {item}",
+                        "drop {item}"
+                    ]
+                },
+                {
+                    "name": "PlayerTakeIntent",
+                    "slots": [
+                        {
+                            "name": "item",
+                            "type": "GameNoun"
+                        }
+                    ],
+                    "samples": [
+                        "pick up {item}",
+                        "get {item}",
+                        "get the {item}",
+                        "take the {item}",
+                        "take {item}"
+                    ]
+                },
+                {
+                    "name": "PlayerExamineIntent",
+                    "slots": [
+                        {
+                            "name": "item",
+                            "type": "GameNoun"
+                        }
+                    ],
+                    "samples": [
+                        "look at {item}",
+                        "look at the {item}",
+                        "inspect {item}",
+                        "examine the {item}",
+                        "examine {item}"
+                    ]
+                },
+                {
+                    "name": "PlayerReadIntent",
+                    "slots": [
+                        {
+                            "name": "item",
+                            "type": "GameNoun"
+                        }
+                    ],
+                    "samples": [
+                        "read {item}"
+                    ]
+                },
+                {
+                    "name": "PlayerInventoryIntent",
+                    "slots": [],
+                    "samples": [
+                        "what do I have",
+                        "what am I holding",
+                        "what am I carrying"
+                    ]
+                },
+                {
+                    "name": "PlayerLookIntent",
+                    "slots": [],
+                    "samples": [
+                        "redescribe",
+                        "look around"
+                    ]
+                },
+                {
+                    "name": "PlayerHangIntent",
+                    "slots": [
+                        {
+                            "name": "item",
+                            "type": "GameNoun"
+                        }
+                    ],
+                    "samples": [
+                        "hang up the {item} on the hook",
+                        "hang up the {item}",
+                        "hang the {item} on the hook",
+                        "hang the {item}",
+                        "put the {item} on the hook"
+                    ]
+                },
+                {
+                    "name": "PlayerWearingIntent",
+                    "slots": [],
+                    "samples": [
+                        "what have I got on",
+                        "what am I wearing"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "Direction",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "back"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bar"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cloakrom"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bathroom"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "west"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "east"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "south"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "north"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "GameNoun",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "floor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dust"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mirror"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ticket"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "message"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cloak"
+                            }
+                        }
+                    ]
+                }
+            ]
         }
-      ],
-      "types": [
-        {
-          "values": [
-            {
-              "name": {
-                "value": "west"
-              }
-            },
-            {
-              "name": {
-                "value": "east"
-              }
-            },
-            {
-              "name": {
-                "value": "south"
-              }
-            },
-            {
-              "name": {
-                "value": "north"
-              }
-            }
-          ],
-          "name": "Direction"
-        },
-        {
-          "values": [
-            {
-              "name": {
-                "value": "ticket"
-              }
-            },
-            {
-              "name": {
-                "value": "message"
-              }
-            },
-            {
-              "name": {
-                "value": "cloak"
-              }
-            }
-          ],
-          "name": "GameNoun"
-        }
-      ]
     }
-  },
-  "version": "2"
 }
