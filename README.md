@@ -10,3 +10,4 @@ A typical transcript:
 ![Image]( https://github.com/tomgrove/CloakOfDarkness/blob/main/alexa-transcript.png)
 .</p>
 
+There is quick-and-dirty wrapper in lambda/local.js that can be run by node outside of Alexa, mainly used as a quick way of debugging/developing.
