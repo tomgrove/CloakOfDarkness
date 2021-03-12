@@ -4,5 +4,7 @@
 
 To actually run this, you need an Amazon Developer account. With this you can then create skills using either ( or both ) the CLI or web-based interfaces. This skill was built as an Alex hosted skill, and it should be simple enough to create a new Alexa-hosted blank skill and replace/add the code and interaction models from here.
 
+.<p align="center">
 ![Image]( https://github.com/tomgrove/CloakOfDarkness/blob/main/alexa-transcript.png)
+.</p>
 
