@@ -8,19 +8,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alexa/skill-sample-nodejs-highlowgame.git"
+    "url": "git+https://github.com/tomgrove/CloakOfDarkness.git"
   },
   "keywords": [
     "Alexa",
     "game",
     "skill"
   ],
-  "author": "Amazon.com",
-  "license": "Amazon Software License",
+  "author": "Tom Grove",
   "bugs": {
-    "url": "https://github.com/alexa/skill-sample-nodejs-highlowgame/issues"
+    "url": "https://github.com/tomgrove/CloakOfDarkness#issues"
   },
-  "homepage": "https://github.com/alexa/skill-sample-nodejs-highlowgame#readme",
+  "homepage": "https://github.com/tomgrove/CloakOfDarkness#readme",
   "dependencies": {
     "ask-sdk": "^2.6.0",
     "aws-sdk": "2.637.0",
